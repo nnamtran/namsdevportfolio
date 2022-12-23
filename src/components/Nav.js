@@ -5,7 +5,7 @@ const Nav = () => {
     return (
         <nav>
             <div className="name-container">
-                <a href="http://localhost:3000/">
+                <a href="https://www.namsdevportfolio.com/">
                     <div className="namsdev">NamsDev</div>
                     <div>Portfolio</div>
                 </a>
