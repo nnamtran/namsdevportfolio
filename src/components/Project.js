@@ -6,7 +6,7 @@ const Project = () => {
     return (
         <div className='project-container' id="project">
             <div className='project'>
-                <div className='numbered-heading'>Project</div>
+                <div className='numbered-heading'>Projects</div>
                 <div className='myproject'>
                     <h2>Personal projects I've built during my free times</h2>
                     <div className="project-outer-box">

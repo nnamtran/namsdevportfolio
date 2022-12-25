@@ -117,6 +117,8 @@ nav .nav-button:hover {
     background-color: #fff9d661;
 }
 
+
+
 /* Landing Page */
 .landingpage-container {
     width: 100%;
@@ -165,11 +167,11 @@ nav .nav-button:hover {
 
 .landingpage .description {
     width: 100%;
-    font-size: 12px;
-    opacity: 0.5;
+    font-size: 13px;
+    opacity: 0.8;
     margin: 0;
     padding: 0;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 li {
@@ -193,6 +195,10 @@ li::before {
     border: 1px solid #002041;
     text-align: center;
     cursor: pointer;
+}
+.landingpage .welcome-button:link, .welcome-button:visited {
+    text-decoration: none;
+    color: #000309;
 }
 
 .landingpage .welcome-button:hover {
@@ -218,12 +224,15 @@ li::before {
     50% {transform: translate(0%, -4%);}
 }
 
+
+
+
 /* About me */
 .about-container {
     position: absolute;
     top: 100vh;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     background-color: #030021;
     display: flex;
     align-items: center;
@@ -798,3 +807,240 @@ li::before {
     visibility: hidden;
 }
 
+/*Media Query*/
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    /* Nav Bar */
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 10vh;
+    }    
+
+    nav .tab-container .header-navigation-link {
+        display: none;
+    }
+
+    nav .name-container {
+        width: 50%;
+        padding-right: 75px;
+    }
+
+    nav .tab-container .nav-button {
+        margin-right: 10px;
+    }
+    /* Landing Page */
+
+    .landingpage-container {
+        width: 100vw;
+    }
+
+    .landingpage-container .landingpage {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .landingpage-container .landingpage .introduction-container {
+        width: 100%;
+        padding-left: 20px;
+        justify-content: space-around;
+    }
+
+    .landingpage-container .landingpage .image-container {
+        display: none;        
+    }
+    .landingpage .description {
+        width: 100%;
+        font-size: 12px;
+        opacity: 0.8;
+        line-height: 25px;
+    }
+
+    .landingpage .introduction-1 {
+        margin-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .landingpage .welcome-button {
+        margin: 10px 0 90px 0;
+        padding: 0px;
+        width: 60%;
+    }
+
+    /* About me */
+    .about-container {
+        width: 100vw;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .about-container .about .numbered-heading {
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+    .about-container .about {
+        width: 100%;
+    }
+    
+    .about .tab-container {
+        width: 90%;
+        margin: 40px auto 0;
+    }
+
+    .content-tabs .content li {
+        font-size: 11px;
+        padding: 5px 0;
+    }
+
+    .content-tabs .content .uni-list {
+        width: 100%;
+        font-size: 12px;
+    }    
+
+    .content-tabs .content .uni-logo {
+        width: 200px;
+        height: 200px;
+        top: 400px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /* Experience */
+    .experience-container {
+        width: 100vw;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .experience-container .experience .numbered-heading {
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+
+    .experience-container .experience {
+        width: 100%;
+    }
+
+    .experience-container .experience .jobs {
+        width: 100%;
+        margin: 40px auto 0;
+    }
+
+    .jobs .job-container .job-description {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .job-container .job-description .year::after {
+        width: 150px;
+    }
+
+    .job-container .job-description h2 {
+        font-size: 16px;
+    }
+
+    .job-container .job-description ul {
+        padding-left: 0;
+    }
+
+    .job-container .job-description li {
+        font-size: 11px;
+    }
+
+    .job-container .job-description a::before {
+        content: '@';
+    }
+
+    /*Projects*/
+
+    .project-container {
+        width: 100vw;
+        height: 150vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .project-container .project {
+        width: 100%;
+    }
+
+    .project-container .project .numbered-heading {
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+
+    .project .myproject {
+        margin: 40px auto 0;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .project .myproject h2 {
+        padding: 0 0 40px 0;
+        margin: 0;
+    }
+
+    .myproject .project-outer-box {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .myproject .project-outer-box .project-box {
+        width: 90%;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    /* Contact */
+
+    .contact-container {
+        top: 450vh;
+        width: 100vw;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contact-container .contact {
+        width: 100%;
+    }
+
+    .contact-container .contact .numbered-heading {
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+
+    .contact .contact-description {
+        margin: 40px auto 0;
+        width: 80%;
+    }
+
+    /*Information*/
+    .info-container {
+        top: 500vh;
+        width: 100vw;
+        position: absolute;
+        flex-direction: row;
+        right: 0;
+    }
+
+    .info-container .info {
+        flex-direction: row;
+    }
+    .info-container .info a:first-child {
+        padding: 0 15px 0 0;
+    }
+    .info-container .info a:last-child {
+        padding: 0 0 0 15px;
+    }
+    .info-container .line {
+        width: 40%;
+        height: 2px;
+    }
+}
