@@ -871,6 +871,7 @@ li::before {
     /* About me */
     .about-container {
         width: 100vw;
+        height: 110vh;
         justify-content: flex-start;
         align-items: flex-start;
     }
@@ -908,6 +909,7 @@ li::before {
 
     /* Experience */
     .experience-container {
+        top: 210vh;
         width: 100vw;
         justify-content: flex-start;
         align-items: flex-start;
@@ -955,6 +957,7 @@ li::before {
     /*Projects*/
 
     .project-container {
+        top: 320vh;
         width: 100vw;
         height: 170vh;
         justify-content: flex-start;
