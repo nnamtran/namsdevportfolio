@@ -1021,8 +1021,8 @@ li::before {
 
     /*Information*/
     .info-container {
-        top: 545vh;
-        height: 20vh;
+        top: 560vh;
+        height: 15vh;
         width: 100vw;
         position: absolute;
         flex-direction: row;
