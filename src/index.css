@@ -957,7 +957,7 @@ li::before {
     /*Projects*/
 
     .project-container {
-        top: 320vh;
+        top: 330vh;
         width: 100vw;
         height: 190vh;
         justify-content: flex-start;
@@ -1021,8 +1021,8 @@ li::before {
 
     /*Information*/
     .info-container {
-        top: 560vh;
-        height: 15vh;
+        top: 580vh;
+        height: 20vh;
         width: 100vw;
         position: absolute;
         flex-direction: row;
