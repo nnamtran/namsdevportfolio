@@ -957,7 +957,7 @@ li::before {
     /*Projects*/
 
     .project-container {
-        top: 330vh;
+        top: 340vh;
         width: 100vw;
         height: 190vh;
         justify-content: flex-start;
@@ -999,7 +999,7 @@ li::before {
     /* Contact */
 
     .contact-container {
-        top: 490vh;
+        top: 470vh;
         width: 100vw;
         justify-content: flex-start;
         align-items: flex-start;
