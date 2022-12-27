@@ -958,7 +958,7 @@ li::before {
     /*Projects*/
 
     .project-container {
-        top: 330vh;
+        top: 340vh;
         width: 100vw;
         height: 190vh;
         justify-content: flex-start;
